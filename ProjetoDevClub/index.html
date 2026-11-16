@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Cabeça (head) configurações do site -->
+
+<head>
+    <!-- Padrão caracteres-->
+    <meta charset="UTF-8">
+
+    <!-- Compativel com celulares e computadores -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Titulos do site -->
+    <title>Projeto GTA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+</head>
+
+<!-- tudo que eu enxergo no site-->
+
+<body>
+
+    <p class="nome">Lucia</p>
+    <img class="personagem" src="img/lucia.png" alt="Lucia">
+
+    <div class="textos">
+
+        <p class="selecionar">selecione o seu personagem</p>
+        <h1>Não é só <br>um jogo</h1>
+        <p class="texto-apoio">Escolha uma lenda do GTA City. Ou tire uma selfie!</p>
+
+    </div>
+
+    <div class="menu">
+
+        <img onclick="escolherPersonagem('Lucia', 'img/lucia.png', '#ff3cac')" class="avatar" src="img/lucia.png">
+
+        <img onclick="escolherPersonagem('Jason', 'img/jason.png', '#00b2c9')" class="avatar" src="img/jason.png">
+
+        <img onclick="escolherPersonagem('CJ', 'img/cj.png', '#7ed37e')" class="avatar" src="img/cj.png">
+
+        <label class="voce">📷
+            <input type="file" accept="image/*" hidden onchange="lerfoto(this)">
+        </label>
+
+    </div>
+
+
+</body>
+<script src="scripts.js">
+
+</script>
+
+<script src="https://js.puter.com/v2/">
+    
+</script>
+
+</html>
